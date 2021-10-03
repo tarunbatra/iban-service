@@ -73,6 +73,11 @@ function prepareIbanForMod (iban = '') {
   return integerIban
 }
 
+/**
+ * Does mod operation on integer form of iban
+ * @param {string} iban
+ * @returns
+ */
 function mod97 (iban) {
   return parseInt(BigInt(iban) % 97n)
 }

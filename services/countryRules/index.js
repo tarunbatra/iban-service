@@ -1,6 +1,6 @@
 'use strict'
 
-const list = require('./spec')
+const spec = require('./spec')
 
 // Symbols picked up from https://www.iban.com/files/iban_registry.pdf
 const symbolMap = {
@@ -12,7 +12,7 @@ const symbolMap = {
 
 const rules = {}
 
-for (const entry of list) {
+for (const entry of spec) {
   const country = entry[0]
   const bbanLength = entry[1]
   const bbanStructure = entry[2]
