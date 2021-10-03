@@ -1,8 +1,7 @@
 {
   "env": {
     "NODE_ENV": "local",
-    "API_PORT": 3000,
-    "TMDB_API_KEY": "017bf5c0c8ff9511a85ae3f6901447af"
+    "API_PORT": 3000
   },
   "ignore": ["*.test.js", "test/"],
   "verbose": false,

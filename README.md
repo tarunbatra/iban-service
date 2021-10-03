@@ -1,6 +1,6 @@
 # iban-service
 
-The application consumes a string and returns it's validity as an IBAN number
+The application consumes a string and returns its validity as an IBAN number
 
 ## Description
 
