@@ -18,7 +18,8 @@ function init () {
 
 async function start () {
   // Start the server
-  await fastify.listen(config.server.port)
+  // Fix for Heroku deployment issue. See https://github.com/fastify/fastify/issues/709
+  await fastify.listen(config.server.port, '0.0.0.0')
   return fastify
 }
 
